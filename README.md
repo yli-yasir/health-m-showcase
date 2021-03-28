@@ -24,7 +24,7 @@ I now keep a rather shallow file structure and separate things according to feat
 *  Difficulty working with App and some of my components especially in edge cases. This is because of insufficient testing.  I will start using [Jest](https://jestjs.io/) and [Enzyme](https://enzymejs.github.io/) for testing. I will also use [StoryBook](https://storybook.js.org/) to develop components in isolation and tackle edge cases.
 
 ## Forms ( Formik, Yup )
-The app needed a rather big form with good client side validation support. Managing forms in React can be a bit challenging, and this is why [Formik](https://formik.org/) was made. Fortunately, formik has out the box support for schema based object validation with [Yup](https://github.com/jquense/yup).
+The app needed a rather big form with good client side validation support. Managing forms in React can be a bit challenging, and this is why [Formik](https://formik.org/) was made. Fortunately, Formik has out the box support for schema based object validation with [Yup](https://github.com/jquense/yup).
 
 ### Challenges
 * A Pedigree Chart (Family Tree) editor was needed in the form. After looking through free options I decided to use the [Fabric](http://fabricjs.com/) HTML canvas library to implement the Pedigree Chart Editor. This is because of Fabric's interative object model and ability to be serialized and restored from JSON.
