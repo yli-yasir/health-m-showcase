@@ -10,7 +10,7 @@ I started my component based UI web development journey a few years ago with [Vu
 
 I decided to learn [React](https://reactjs.org/) because I realized it had a richer and higher quality ecosystem. Although it took me a while to learn to do things in a declarative manner in React, I still personally found it easier and more straightforward to work with than Vue.
 
-Health-m is a single page web application built with React. I used the [Material-UI](https://material-ui.com) React component library to speed up development and to help deliver a high quality user experience.
+Health-M is a single page web application built with React. I used the [Material-UI](https://material-ui.com) React component library to speed up development and to help deliver a high quality user experience.
 
 ### Challenges and lessons
 * Initialy I thought that my file structure was good and everything was well seperated. I had deeply nested folders that were split according to file or component types. This later turned against me when the project started growing. Due to this structure, it became a pain to import and locate modules, and it started to hinder my development considerably. This was when I remembered something I had a while ago but didn't quite understand until now.
