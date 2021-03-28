@@ -19,6 +19,6 @@ Health-m is a single page web application built with React. I used the [Material
 
 I now keep a rather shallow file structure and separate things according to feature or domain.
 
-* Some of the Material-UI components felt a bit verbose, this is tradeoff with the high customizability they offer. I now understand that component libraries are general purpose and I should create my own wrappers around them to make them better suited to my application if it's needed.
+* Some of the Material-UI components felt a bit verbose, this is tradeoff for the high customizability they need to offer. I now understand that component libraries are general purpose and I should create my own wrappers around them to make them better suited to my application if it's needed.
 
 *  Difficulty working with App and some of my components especially in edge cases. This is because of insufficient testing.  I will start using [Jest](https://jestjs.io/) and [Enzyme](https://enzymejs.github.io/) for testing. I will also use [StoryBook](https://storybook.js.org/) to develop components in isolation and tackle edge cases.
