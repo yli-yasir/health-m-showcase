@@ -13,7 +13,7 @@ I decided to learn [React](https://reactjs.org/) because I realized it had a ric
 Health-M is a single page web application built with React. I used the [Material-UI](https://material-ui.com) React component library to speed up development and to help deliver a high quality user experience.
 
 ### Challenges and Lessons
-* Initialy I thought that my file structure was good and everything was well seperated. I had deeply nested folders that were split according to file or component types. This later turned against me when the project started growing. Due to this structure, it became a pain to import and locate modules, and it started to hinder my development considerably. This was when I remembered something I had a while ago but didn't quite understand until now.
+* Initially, I thought that my file structure was good and everything was well seperated. I had deeply nested folders that were split according to file or component types. This later turned against me when the project started growing. Due to this structure, it became a pain to import and locate modules, and it started to hinder my development considerably. This was when I remembered something I had a while ago but didn't quite understand until now.
 
 **"Separation of concerns is not equal to separation of file types"** 
 
