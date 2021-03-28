@@ -12,7 +12,7 @@ I decided to learn [React](https://reactjs.org/) because I realized it had a ric
 
 Health-M is a single page web application built with React. I used the [Material-UI](https://material-ui.com) React component library to speed up development and to help deliver a high quality user experience.
 
-### Challenges and lessons
+### Challenges and Lessons
 * Initialy I thought that my file structure was good and everything was well seperated. I had deeply nested folders that were split according to file or component types. This later turned against me when the project started growing. Due to this structure, it became a pain to import and locate modules, and it started to hinder my development considerably. This was when I remembered something I had a while ago but didn't quite understand until now.
 
 **"Separation of concerns is not equal to separation of file types"** 
@@ -22,3 +22,9 @@ I now keep a rather shallow file structure and separate things according to feat
 * Some of the Material-UI components felt a bit verbose, this is tradeoff for the high customizability they need to offer. I now understand that component libraries are general purpose and I should create my own wrappers around them to make them better suited to my application if it's needed.
 
 *  Difficulty working with App and some of my components especially in edge cases. This is because of insufficient testing.  I will start using [Jest](https://jestjs.io/) and [Enzyme](https://enzymejs.github.io/) for testing. I will also use [StoryBook](https://storybook.js.org/) to develop components in isolation and tackle edge cases.
+
+## Forms ( Formik, Yup )
+The app needed a rather big form with good client side validation support. Managing forms in React can be a bit challenging, and this is why [Formik](https://formik.org/) was made. Fortunately, formik has out the box support for schema based object validation with [Yup](https://github.com/jquense/yup).
+
+### Challenges
+* A Pedigree Chart (Family Tree) editor was needed in the form. After looking through free options I decided to use the [Fabric](http://fabricjs.com/) HTML canvas library to implement the Pedigree Chart Editor. This is because of Fabric's interative object model and ability to be serialized and restored from JSON.
