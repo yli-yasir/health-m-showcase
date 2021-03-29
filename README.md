@@ -10,6 +10,8 @@ Health-M is a single page web application built with React. It makes use the [Ma
 
 I decided to use React because it has a rich and high quality ecosystem. Although it took me a while to learn to do things in a declarative manner in React, I still personally found it easier and more straightforward to work with than other frameworks such as [Vue](https://vuejs.org/).
 
+![UI GIF](https://github.com/yli-yasir/health-m-showcase/raw/main/assets/ui.gif)
+
 ### 🔍 Challenges and Lessons
 * Initially, I thought that my file structure was good and everything was well seperated. I had deeply nested folders that were split according to file or component types. This later turned against me when the project started growing. Due to this structure, it became a pain to import and locate modules, and it started to hinder my development considerably. This was when I remembered something I had a while ago but didn't quite understand until now.
 
@@ -47,5 +49,6 @@ Conclusion: No matter where you choose to store your token. Make sure your site 
 ## Forms ( Formik, Yup, Fabric )
 The app needed a rather big form with good client side validation support. Managing forms in React can be a bit challenging, and this is why [Formik](https://formik.org/) was made. Fortunately, Formik has out the box support for schema based object validation with [Yup](https://github.com/jquense/yup).
 
+![Pedigree Chart Editor](https://github.com/yli-yasir/health-m-showcase/raw/main/assets/pedigreeChart.gif)
 ### 🔍 Challenges
 * A Pedigree Chart (Family Tree) editor was needed in the form. After looking through free options I decided to use the [Fabric](http://fabricjs.com/) HTML canvas library to implement the Pedigree Chart Editor. This is because of Fabric's interative object model and ability to be serialized and restored from JSON.
