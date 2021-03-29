@@ -10,7 +10,7 @@ Health-M is a single page web application built with React. It makes use the [Ma
 
 I decided to learn React because I realized it had a richer and higher quality ecosystem. Although it took me a while to learn to do things in a declarative manner in React, I still personally found it easier and more straightforward to work with than other frameworks such as [Vue](https://vuejs.org/).
 
-### Challenges and Lessons
+### 🔍 Challenges and Lessons
 * Initially, I thought that my file structure was good and everything was well seperated. I had deeply nested folders that were split according to file or component types. This later turned against me when the project started growing. Due to this structure, it became a pain to import and locate modules, and it started to hinder my development considerably. This was when I remembered something I had a while ago but didn't quite understand until now.
 
 **"Separation of concerns is not equal to separation of file types"** 
@@ -25,14 +25,14 @@ I now keep a rather shallow file structure and separate things according to feat
 
 It is very common to perform asynchronous logic in React components such as fetching data when the component mounts and then updating component state a callback that is executed after the async operation. It may seem dead simple at first because you all need to is call an asynchronus function when a certain event occurs ( such as `componentDidMount` ) or utilize the  `useEffect()` hook. 
 
-### Challenges and Lessons
+### 🔍 Challenges and Lessons
 * A component might be unmounted while an asynchronous call is in progress. The callback for this async function will still execute even after the component has been unmounted. This is a waste of resources especially when the callback does expensive work. This problem is best solved by executing clean up logic when the component unmounts. We can cancel the effects of the async callback when the component is unmounted by using something similar to [Cancellable Promises](https://github.com/facebook/react/issues/5465#issuecomment-157888325), or you can check if the component is mounted in your callback and ony execute your logic accordingly. 
 
 ## User Authentication ( JWT, Local Storage VS Cookies )
 
 Health-M uses [JWT](https://jwt.io/) for authentication. 
 
-### Challenges and Lessons
+### 🔍 Challenges and Lessons
 
 * Local Storage VS Cookies, where should the JWT be stored?
 
@@ -47,5 +47,5 @@ Conclusion: No matter where you choose to store your token. Make sure your site 
 ## Forms ( Formik, Yup, Fabric )
 The app needed a rather big form with good client side validation support. Managing forms in React can be a bit challenging, and this is why [Formik](https://formik.org/) was made. Fortunately, Formik has out the box support for schema based object validation with [Yup](https://github.com/jquense/yup).
 
-### Challenges
+### 🔍 Challenges
 * A Pedigree Chart (Family Tree) editor was needed in the form. After looking through free options I decided to use the [Fabric](http://fabricjs.com/) HTML canvas library to implement the Pedigree Chart Editor. This is because of Fabric's interative object model and ability to be serialized and restored from JSON.
