@@ -52,3 +52,23 @@ The app needed a rather big form with good client side validation support. Manag
 ![Pedigree Chart Editor](https://github.com/yli-yasir/health-m-showcase/raw/main/assets/pedigreeChart.gif)
 ### 🔍 Challenges
 * A Pedigree Chart (Family Tree) editor was needed in the form. After looking through free options I decided to use the [Fabric](http://fabricjs.com/) HTML canvas library to implement the Pedigree Chart Editor. This is because of Fabric's interative object model and ability to be serialized and restored from JSON.
+
+
+### Backend ( Node, Express, REST, MongoDB, Joi ) 
+The backend server for this application utilizes Node.js and Express to build a web server which complies to the REST architectural style.
+
+### 🔍 Challenges and Lessons
+* Some routes in the web server shared similar logic to some degree, and repeating myself would have resulted in code that is harder to scale and maintain. To remedy this, I am defining seperate middleware functions and reusing them where needed.
+
+* Consistency was needed on the web server. This is done by complying to REST architecture as much as possible.
+
+* Manually and imperatively validating user data was unmaintainable and a pain. I utilized the `Joi` Object schema validation library for validation.
+
+* The business logic (domain) layer was tightly coupled with the data access layer. So, a lot of changes would need be made if a change was introduced in the data access layer.
+
+The solution is to define an interface (sometimes called repository) which defines all our business logic functions. This interface is then utilized in our routers ( controllers) to decouple the domain layer from the data persistence layer.
+
+If any change was made to data access layer ( Swapping to a different database), then only changes to the `implementations` in our repository interface would be to be made. This is because our controllers only call the functions defined in that interface now , and do not care about their actual implementations.  
+
+
+
