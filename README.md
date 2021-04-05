@@ -66,9 +66,9 @@ The backend server for this application utilizes Node.js and Express to build a 
 
 * The business logic (domain) layer was tightly coupled with the data access layer. So, a lot of changes would need be made if a change was introduced in the data access layer.
 
-The solution is to define an interface (sometimes called repository) which defines all our business logic functions. This interface is then utilized in our routers ( controllers) to decouple the domain layer from the data persistence layer.
+The solution is to define an interface (sometimes called repository) which defines all our business logic functions. This interface is then utilized in our routers (controllers) to decouple the domain layer from the data persistence layer.
 
-If any change was made to data access layer ( Swapping to a different database), then only changes to the **implementations** in our repository interface would be to be made. This is because our controllers only call the functions defined in that interface now , and do not care about their actual implementations.  
+If any change was made to data access layer (Swapping to a different database), then only changes to the **implementations** in our repository interface would be to be made. This is because our controllers only call the functions defined in that interface now, and do not care about their actual implementations.  
 
 
 
