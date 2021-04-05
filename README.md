@@ -60,7 +60,7 @@ The backend server for this application utilizes Node.js and Express to build a 
 ### 🔍 Challenges and Lessons
 * Some routes in the web server shared similar logic to some degree, and repeating myself would have resulted in code that is harder to scale and maintain. To remedy this, I am defining seperate middleware functions and reusing them where needed.
 
-* Consistency was needed on the web server. This is done by complying to REST architecture as much as possible.
+* Consistency was needed on the web server. One must try to remain consistent and comply to REST architecture when possible.
 
 * Manually and imperatively validating user data was unmaintainable and a pain. I utilized the `Joi` Object schema validation library for validation.
 
